@@ -155,6 +155,10 @@ function(err, results){
         
         io.sockets.on('connection', function (socket) {
           socket.on('venreq', function (data) {
+			//ai on the rectabgle is the hi latitude
+			//al is the low latitude
+			//oi is the high longitude
+			//ol is the low longitude
             var ai = data.lathi;
             var al = data.latlo;
             var oi = data.lonhi;
